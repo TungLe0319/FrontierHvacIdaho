@@ -3,7 +3,7 @@
   <SectionHeaderCenter title="What we provide"
     content="Elevate Comfort with Our Expert Heating, Air Conditioning, and Indoor Air Quality Services."
     header="Optimized HVAC Solutions" />
-  <div class="flex w-full flex-col items-center justify-center p-10">
+  <div class="flex w-full flex-col items-center justify-center p-4 lg:p-10">
     <div class="features">
  
       <div class="feature shadow-2xl shadow-purple-500/10 group" v-for="feature in featureItems">

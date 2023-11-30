@@ -3,8 +3,8 @@
     <div class="lg:absolute flex items-center justify-center right-0 top-0 z-10">
       <img src="/ac.png" alt="AC Unit Icon" class="w-4/5 shadow-none hover:brightness-100">
     </div>
-    <div class="absolute  inset-x-0  lg:bottom-0  ">
-      <svg height="560" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <div class="absolute  inset-x-0 bottom-20  lg:bottom-0  ">
+      <svg height="660" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#341e65" fill-opacity="1" d="M0,32L1440,96L1440,320L0,320Z"></path>
       </svg>
     </div>

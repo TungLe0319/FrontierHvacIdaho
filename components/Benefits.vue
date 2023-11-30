@@ -41,10 +41,10 @@ const benefits = [
         <article :class="index % 2 === 1 ? ' order-1' : ' order-0'"
           class=" flex lg:w-1/2 flex-col space-y-6 items-center justify-center  lg:p-10 p-4 ">
           <Icon :name="benefit.icon" class="text-9xl" />
-          <h1 class="mb-0  text-5xl font-bold  ">
+          <h1 class="mb-0  text-2xl lg:text-5xl font-bold  ">
             {{ benefit.title }}
           </h1>
-          <p class="p-4 text-2xl ">
+          <p class="p-4  text-xl lg:text-2xl ">
             {{ benefit.content }}
           </p>
         </article>
@@ -59,5 +59,9 @@ const benefits = [
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @media screen and (max-width: 768px) {
+ 
+    background-attachment: scroll;
+  }
 }
 </style>
