@@ -1,98 +1,80 @@
-<script setup lang="ts">
-const testimonials = ref([
-  {
-    username: 'Kenzie Aderson',
-    image: 'https://i.pravatar.cc/150?img=1',
-    comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. , accusantium distinctio ea autem eligendi maiores natus dolorem. Similique.1',
-  },
-  {
-    username: 'Syther Blade',
-    image: 'https://i.pravatar.cc/150?img=5',
-    comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil soluta quae velit modi quibusdam eos non5',
-  },
-  {
-    username: 'Pikachu',
-    image: 'https://i.pravatar.cc/150?img=3',
-    comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil soluta quae velit modi quibusdam eos non, accusantium distinctio ea autem eligendi maiores natus dolorem.3',
-  },
-  {
-    username: 'Cloud Strife',
-    image: 'https://i.pravatar.cc/150?img=4',
-    comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil soluta quae velit modi quibusdam eos non.4',
-  },
-  {
-    username: 'Mario',
-    image: 'https://i.pravatar.cc/150?img=2',
-    comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil soluta quae velit modi quibusdam eos non, accusantium distinctio ea autem eligendi maiores natus dolorem. Similique.  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, tempora!2',
-  },
-
-  {
-    username: 'Collen Mckinney',
-    image: 'https://i.pravatar.cc/150?img=6',
-    comment: 'Lorem ipsum dolor sit amet consectetur.6',
-  },
-  {
-    username: 'Theo van',
-    image: 'https://i.pravatar.cc/150?img=50',
-    comment: 'Lorem ipsum.7',
-  },
-  {
-    username: 'Squall Leonhart',
-    image: 'https://i.pravatar.cc/150?img=34',
-    comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil  accusantium distinctio ea autem eligendi maiores natus dolorem.8',
-  },
-  {
-    username: 'Sephiroth',
-    image: 'https://i.pravatar.cc/150?img=45',
-    comment: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil soluta quae velit modi quibusdam eos non.  sit amet consectetur 9',
-  },
-
-])
-
-// function randomize() {
-//   setInterval(() => {
-//     const randomIndex1 = Math.floor(Math.random() * testimonials.value.length)
-//     const randomIndex2 = Math.floor(Math.random() * testimonials.value.length)
-
-//     // Move the element at randomIndex1 to randomIndex2
-//     const movedItem = testimonials.value.splice(randomIndex1, 1)[0]
-//     testimonials.value.splice(randomIndex2, 0, movedItem)
-//   }, 5000) // 3000 milliseconds = 3 seconds
-// }
-// randomize()
-</script>
-
 <template>
-  <div class="p-4">
-    <SectionHeader
-      header="What People think" title="Testimonials"
-      content="Lorem ipsum dolor sit amet consectetur adipisicing elit. , accusantium distinctio ea autem eligendi maiores natus dolorem. "
-    />
-    <div class="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-5">
-      <div v-for="t in testimonials" :key="t.username" class=" rounded-md my-2 card bg-base-100 p-0.5 h-fit  glass  ">
-        <div class="p-4 bg-[var(--jet)] hover:bg-zinc-800 rounded  shadow-xl transition-all  duration-150 ease-linear group">
-          <div class="flex items-center space-x-4 justify-start mb-4">
-            <div
-              class="avatar p-0.5 bg-accent shadow-md mask mask-hexagon scale-150 -translate-x-4 -translate-y-4 duration-300"
-            >
-              <div class="w-12 mask mask-hexagon">
-                <img :src="t.image" :alt="t.username" class="rounded">
-              </div>
-            </div>
-            <p class="text-neutral-content font-bold">
-              {{ t.username }}
-            </p>
+  <div class="container mx-auto my-24 md:px-6">
+    <SectionHeaderCenter title="Testimonials" header="What our customers say"
+      content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic." />
+    <section class="mb-32 pt-5 text-center px-5 lg:px-0">
+      <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
+        <div class="mb-12 md:mb-0">
+          <div class="mb-6 flex justify-center">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+              class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
           </div>
-          <div class="flex flex-col space-y-2 text-start">
-            <p class="text-neutral-content ">
-              <Icon name="mdi:format-quote-open" class="text-2xl " /> {{ t.comment }}
-            </p>
+          <h5 class="mb-2 text-lg font-bold">Maria Smantha</h5>
+          <h6 class="text-primary dark:text-primary-400 mb-4 font-medium">
+            Web Developer
+          </h6>
+          <p class="mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
+            id officiis hic tenetur quae quaerat ad velit ab hic.
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
+              <path fill="currentColor"
+                d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+            </svg>
+          </p>
+         <div class="flex gap-2  justify-center">
+          <Icon v-for="(i, index) in 4" :key="index" name="ic:round-star" color="text-warning" size="30" />
+            <Icon  name="ic:round-star-half" color="text-warning" size="30" />
+         </div>
+        </div>
+        <div class="mb-12 md:mb-0">
+          <div class="mb-6 flex justify-center">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
+              class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
           </div>
+          <h5 class="mb-2 text-lg font-bold">Lisa Cudrow</h5>
+          <h6 class="text-primary dark:text-primary-400 mb-4 font-medium">
+            Graphic Designer
+          </h6>
+          <p class="mb-4">
+            Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+            suscipit laboriosam, nisi ut aliquid commodi.
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
+              <path fill="currentColor"
+                d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+            </svg>
+          </p>
+       <div class="flex gap-2  justify-center">
+        <Icon v-for="(i,index) in 5" :key="index" name="ic:round-star" color="text-warning" size="30" />
+        
+       </div>
+        </div>
+        <div class="mb-0">
+          <div class="mb-6 flex justify-center">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
+              class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
+          </div>
+          <h5 class="mb-2 text-lg font-bold">John Smith</h5>
+          <h6 class="text-primary dark:text-primary-400 mb-4 font-medium">
+            Marketing Specialist
+          </h6>
+          <p class="mb-4">
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque corrupti.
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
+              <path fill="currentColor"
+                d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
+            </svg>
+          </p>
+         <div class="flex gap-2  justify-center">
+          <Icon v-for="(i, index) in 4" :key="index" name="ic:round-star" color="text-warning" size="30" />
+            <Icon  name="ic:round-star-border" color="text-warning" size="30" />
+         </div>
         </div>
       </div>
-      <div />
-    </div>
+    </section>
   </div>
 </template>
+
+<script lang="ts" setup></script>
 
 <style></style>

@@ -3,7 +3,7 @@ import './assets/css/tailwind.css'
 </script>
 
 <template>
-  <div>
+  <div class="">
     <NavBar />
     <NuxtPage />
     <Footer />

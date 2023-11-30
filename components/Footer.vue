@@ -6,7 +6,7 @@
 
 
     <div class="">
-      <div class="max-w-screen-lg py-10 px-4 sm:px-6 text-gray-800 sm:flex justify-between mx-auto">
+      <div class="max-w-screen-lg py-10 px-4 sm:px-6  sm:flex justify-between mx-auto">
           <div class="p-5 sm:w-2/12 border-r">
               <h3 class="text-xl uppercase  font-bold">Menu</h3>
               <ul>
@@ -56,6 +56,7 @@
                 <Icon name="skill-icons:github-dark" class="text-3xl" />
               </a>
             </div>
+            <a href="https://www.flaticon.com/free-icons/air-conditioning" title="air conditioning icons">icons created by vectorsmarket15 - Flaticon</a>
           <p class="my-5">© Copyright 2023. All Rights Reserved.</p>
       </div>
   </div>

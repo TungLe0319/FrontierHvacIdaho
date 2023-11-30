@@ -2,46 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-img{
-   @apply  rounded-md hover:brightness-90 transition-all duration-150 ease-linear shadow-md;
+img {
+  @apply rounded-md hover:brightness-90 transition-all duration-150 ease-linear shadow-md;
 }
-
-
 
 :root {
-  --lavender-blush: #f6e8eaff;
-  --bright-pink-crayola: #ef626cff;
-  --licorice: #22181cff;
-  --jet: #312f2fff;
-  --tiffany-blue: #84dccfff;
-
-  /* Other global styles */
-  --font-family: 'Your Preferred Font', sans-serif;
+  --aero: #61b3d6ff;
+  --auburn: #9a2622ff;
+  --night: #141518ff;
+  --midnight-blue: #341e65;
+  --penn-blue: #081b54ff;
 }
 
-body {
-  background-color: var(--licorice);
-  color: var(--lavender-blush);
-  font-family: var(--font-family);
+body{
+  background-color: var(--night);
 }
 
-h1, h2, h3 {
-  color: var(--bright-pink-crayola);
+
+/* Example usage of the color variables */
+.header {
+  background-color: var(--midnight-blue);
 }
 
-p {
-  color: var(--tiffany-blue);
-}
-
-a {
-  color: var(--bright-pink-crayola);
-}
-
-button {
-  background-color: var(--bright-pink-crayola);
-  color: var(--jet);
+.button {
+  background-color: var(--auburn);
+  color: white;
 }
 
 /* Add more specific styling for other elements as needed */

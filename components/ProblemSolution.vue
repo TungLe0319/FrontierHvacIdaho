@@ -14,11 +14,8 @@
     </div>
     <div class="flex flex-col items-center justify-center lg:w-1/2 lg:pl-10">
       <SectionHeader
-        header="Problem/Solution" title="Find the right solution for your business"
-        content="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae modi doloremque, deserunt optio harum,
-            officia veniam voluptatibus expedita architecto quibusdam perspiciatis nam rem. Ratione delectus aut a modi
-            suscipit accusamus atque assumenda aliquid ipsum aperiam, earum praesentium quod dolores sapiente quo
-            explicabo vero commodi. Odio repudiandae neque nobis animi nihil!"
+        header="Your Comfort, Our Mission" title="Efficient Heating and Cooling Answers"
+        content="Facing issues with inconsistent room temperatures? Our HVAC experts provide tailored solutions to ensure a comfortable environment in every corner of your home. Say goodbye to temperature imbalances and hello to personalized climate control."
       />
       <div class="mt-3 space-y-3">
         <div class="flex">
@@ -28,12 +25,10 @@
           <div class="lg:w-3/4">
             <div>
               <h1 class="font-serif text-xl font-bold lg:text-2xl">
-                Quick Support
+         Responsive Assistance
               </h1>
               <p class="text-sm lg:text-base">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas nemo corrupti esse, eveniet quos dignissimos,
-                accusantium soluta, commodi quae nihil cum tempora omnis.
+       With a proven track record of excellence, our HVAC solutions stand the test of time. Trust in our expertise to deliver reliable and high-quality services. We prioritize the longevity and efficiency of your HVAC system to ensure your ongoing comfort.
               </p>
             </div>
           </div>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onBeforeUnmount, onMounted, ref } from 'vue'
-
+import Button from './Globals/Button.vue'
 // const { session } = useAuth();
 const navTransform = ref('translateY(0)')
 
@@ -84,53 +84,61 @@ const isOpen = ref(false)
 </script>
 
 <template>
-  <div
-    ref="nav"
-    class="fixed top-0 z-50 flex w-full items-center lg:justify-around gap-4 lg:gap-0 bg-white p-2 text-gray-900 shadow-md transition-transform duration-300 ease-in-out"
-    :style="{ transform: navTransform }"
-  >
-   <Button class="bg-transparent lg:hidden block" label="Open" @click="isOpen = true" >
-        <Icon name="solar:hamburger-menu-linear" class="text-6xl" />
-       </Button>
-    <div class="flex w-fit items-center space-x-3">
-      <Icon name="skill-icons:nuxtjs-dark" class="text-5xl" />
-    
+  <div ref="nav"
+    class="fixed top-0 z-50 flex  w-full items-center lg:justify-around gap-4 lg:gap-0 bg-white p-2 text-gray-900 shadow-md transition-transform duration-300 ease-in-out"
+    :style="{ transform: navTransform }">
+    <div class="w-1/3 px-2 flex  ">
+      <div class=" text-4xl font-bold p-2 text-center w-full ">
+        FrontierHvacIdaho
+      </div>
     </div>
-    <div class="relative hidden w-fit overflow-hidden lg:inline-flex">
-      <NuxtLink href="/" class="nav-item is-active" active-color="orange">
-        Home
-      </NuxtLink>
-      <NuxtLink href="/about" class="nav-item" active-color="orange">
-        About
-      </NuxtLink>
-      <NuxtLink href="/contact" class="nav-item" active-color="orange">
-        Contact
-      </NuxtLink>
-      <span class="nav-indicator" />
-    </div>
-    <div class="flex items-center justify-center space-x-4">
-   
-    
-      <a class="hidden lg:block " href="https://github.com/TungLe0319">
-        <Icon name="skill-icons:github-dark" class="text-3xl" />
-      </a>
-    </div>
-
-      <USlideover v-model="isOpen" :ui="{
-        background:'bg-white dark:bg-white',
-      }">
-        <div class="p-4  ">
-        <ul class="space-y-6   ">
-          <li   v-for="navItem in navItems" class="hover:brightness-50 text-6xl flex items-center justify-start font-bold ">
-            <NuxtLink  :href="navItem.href" class="nav-item is-active" active-color="orange">
-             {{  navItem.label }}
-            </NuxtLink>
-          </li>
-        
-        </ul>
-
+    <div class="w-2/3 px-2">
+      <div class="flex gap-4 justify-end w-full ">
+        <Button class="  hover:text-[var(--auburn)] bg-transparent   flex items-center justify-center gap-2">
+          <Icon name="uis:schedule" size="30" />
+          <span class="text-sm">Schedule Now</span>
+        </Button>
+        <Button class="  hover:text-[var(--auburn)]  bg-transparent flex items-center justify-center gap-2">
+          <Icon name="carbon:star-review" size="30" />
+          <span class="text-sm">Review us on google</span>
+        </Button>
+        <Button class=" rounded-full  bg-[var(--auburn)]  text-white shadow-md flex items-center justify-center gap-2">
+          <Icon name="material-symbols:call" size="30" />
+          <span>1-208-921-232</span>
+        </Button>
+      </div>
+      <div class="flex w-full justify-end">
+        <Button class="bg-transparent lg:hidden block" label="Open" @click="isOpen = true">
+          <Icon name="solar:hamburger-menu-linear" class="text-6xl" />
+        </Button>
+        <div class="relative hidden w-fit overflow-hidden lg:inline-flex">
+          <NuxtLink href="/" class="nav-item is-active" active-color="red">
+            Home
+          </NuxtLink>
+          <NuxtLink href="/about" class="nav-item" active-color="red">
+            About
+          </NuxtLink>
+          <NuxtLink href="/contact" class="nav-item" active-color="red">
+            Contact
+          </NuxtLink>
+          <span class="nav-indicator" />
         </div>
-      </USlideover>
+        <USlideover v-model="isOpen" :ui="{
+          background: 'bg-white dark:bg-white',
+        }">
+          <div class="p-4  ">
+            <ul class="space-y-6   ">
+              <li v-for="navItem in navItems"
+                class="hover:brightness-50 text-6xl flex items-center justify-start font-bold ">
+                <NuxtLink :href="navItem.href" class="nav-item is-active" active-color="orange">
+                  {{ navItem.label }}
+                </NuxtLink>
+              </li>
+            </ul>
+          </div>
+        </USlideover>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -140,7 +148,8 @@ const isOpen = ref(false)
   transition: 0.3s;
   margin: 0 6px;
   z-index: 1;
- 
+font-weight: bold;
+
   position: relative;
 }
 
@@ -151,7 +160,7 @@ const isOpen = ref(false)
   left: 0;
   width: 100%;
   height: 5px;
-  background-color: #dfe2ea;
+  background-color: #801616;
   border-radius: 8px 8px 0 0;
   opacity: 0;
   transition: 0.3s;

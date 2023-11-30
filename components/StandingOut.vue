@@ -3,12 +3,12 @@ const benefits = [
   {
     title: 'Elevate Your Digital Presence',
     content: 'Transform your online presence with innovative and cutting-edge solutions.',
-      image: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?q=80&w=1447&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: 'https://images.unsplash.com/photo-1640087975859-f2e7a8d09634?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
     title: 'Craft Seamless Solutions',
     content: 'Create user-friendly and efficient solutions for unmatched online success.',
-      image: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      image: 'https://images.unsplash.com/photo-1615309662243-70f6df917b59?q=80&w=1980&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   
   {
@@ -16,11 +16,7 @@ const benefits = [
     content: 'Experience boosted engagement and a seamless digital transformation.',
       image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
-  {
-    title: 'Boosted Engagement',
-    content: 'Enhance user experience and skyrocket conversions for increased success.',
-      image: 'https://images.unsplash.com/photo-1520333789090-1afc82db536a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-  },
+
 ];
 </script>
 
@@ -51,5 +47,13 @@ const benefits = [
 </template>
 
 <style scoped>
-
+ img{
+ 
+   /* always scale the image to the appropriate size of your screen */
+   background-size: cover;
+ 
+   background-position: center;
+   /* keeps the image fixed while scrolling , neat effect. */
+   background-attachment: fixed; 
+ }
 </style>
