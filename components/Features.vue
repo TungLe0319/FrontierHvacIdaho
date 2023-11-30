@@ -3,20 +3,24 @@
   <SectionHeaderCenter title="What we provide"
     content="Elevate Comfort with Our Expert Heating, Air Conditioning, and Indoor Air Quality Services."
     header="Optimized HVAC Solutions" />
-  <div class="flex w-full flex-col items-center justify-center">
+  <div class="flex w-full flex-col items-center justify-center p-10">
     <div class="features">
-      <div class="feature" v-for="feature in featureItems">
-        <div class="feature-content   ">
-          <Icon :name="feature.icon"  class="text-9xl"/>
-          <span class="text-3xl font-bold">{{ feature.title }}</span>
-          <span>{{ feature.content }}</span>
+ 
+      <div class="feature shadow-2xl shadow-purple-500/10 group" v-for="feature in featureItems">
+          <div class="feature-content    ">
+            <Icon :name="feature.icon"  class="text-8xl group-hover:text-amber-300 "/>
+            <span class="text-3xl font-bold  group-hover:text-amber-300 transition-colors duration-300">{{ feature.title }}</span>
+            <span>{{ feature.content }}</span>
+          </div>
         </div>
-      </div>
+      
     </div>
   </div>
 </template>
 
 <script  setup>
+import  Button from "./Globals/Button.vue";
+
 
 const featureItems = [
   {
@@ -125,7 +129,7 @@ function getTextColorClass(color) {
 
 .features {
   width: 100%;
-  height: 80vh;
+  height: 75vh;
   display: grid;
   grid-column-gap: 0.3rem;
   grid-row-gap: 0.3rem;

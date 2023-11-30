@@ -3,7 +3,7 @@
     <div class="relative max-w-7xl mx-auto shadow-xl ">
       <div class="max-w-lg mx-auto rounded-lg shadow-lg overflow-hidden lg:max-w-none lg:flex">
         <div
-          class="flex-1 px-6 py-8 lg:p-12 bg-[var(--penn-blue)] hover:bg-gray-500 transition-all duration-200 hover:scale-105">
+          class="flex-1 px-6 py-8 lg:p-12 bg-[var(--penn-blue)] transition-all duration-200 ">
           <h3 class="text-2xl font-extrabold  sm:text-3xl">Same Day Service</h3>
           <p class="mt-6 text-base text-gray-50 sm:text-lg">Heading System install for as low as $89 + Free consultation &
             Same Day Service
@@ -27,7 +27,7 @@
             <span>$19.99</span><span class="ml-3 text-xl font-medium text-gray-50">USD</span>
           </div>
           <div class="mt-6">
-            <Button class="bg-[var(--auburn)] rounded-full">
+            <Button class="bg-[var(--auburn)] rounded-full  hover:shadow-xl">
               Get started
             </Button>
           </div>

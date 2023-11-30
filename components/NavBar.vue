@@ -10,10 +10,17 @@ const route = useRoute()
 route.path
 
 function handleScroll() {
-  const scrollY = window.scrollY
-  navTransform.value
-    = scrollY > lastScrollPosition ? 'translateY(-100%)' : 'translateY(0)'
-  lastScrollPosition = scrollY
+  const scrollY = window.scrollY;
+
+  // Adjust the threshold value (200) based on your specific requirement
+  const scrollThreshold = 200;
+
+  navTransform.value =
+    scrollY > lastScrollPosition && scrollY > scrollThreshold
+      ? 'translateY(-100%)'
+      : 'translateY(0)';
+
+  lastScrollPosition = scrollY;
 }
 
 function handleIndicator(el: HTMLElement) {
@@ -70,11 +77,6 @@ onBeforeUnmount(() => {
 })
 
 
-const navItems = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
-]
 
 
 const isOpen = ref(false)
@@ -87,7 +89,7 @@ const isOpen = ref(false)
   <div ref="nav"
     class="fixed top-0 z-50 lg:flex  w-full items-center lg:justify-around gap-4 lg:gap-0 bg-white p-2 text-gray-900 shadow-md transition-transform duration-300 ease-in-out"
     :style="{ transform: navTransform }">
-    <div class="lg:w-1/3 px-2 hidden lg:flex  ">
+    <div class="lg:w-1/3 px-2 hidden  lg:flex  ">
       <div class=" lg:text-4xl font-bold p-2 text-center w-full ">
         FrontierHvacIdaho
       </div>
@@ -107,18 +109,21 @@ const isOpen = ref(false)
           <span>1-208-921-232</span>
         </Button>
       </div>
-      <div class="flex w-full lg:justify-end">
+      <div class="flex w-full items-center lg:justify-end">
+          <Button class="bg-transparent lg:hidden block" label="Open" @click="isOpen = true">
+            <Icon name="solar:hamburger-menu-linear" class="text-4xl" />
+          </Button>
            <!-- OPEN & NAV BUTTONS -->
-        <Button class="bg-transparent lg:hidden block" label="Open" @click="isOpen = true">
-          <Icon name="solar:hamburger-menu-linear" class="text-4xl" />
-        </Button>
+   <div class=" lg:hidden bloc lg:text-4xl font-bold p-2 text-center w-full ">
+          FrontierHvacIdaho
+        </div>
+           
+      
         <div class="relative hidden w-fit overflow-hidden lg:inline-flex">
           <NuxtLink href="/" class="nav-item is-active" active-color="red">
             Home
           </NuxtLink>
-          <NuxtLink href="/about" class="nav-item" active-color="red">
-            About
-          </NuxtLink>
+      
           <NuxtLink href="/contact" class="nav-item" active-color="red">
             Contact
           </NuxtLink>
@@ -142,9 +147,7 @@ const isOpen = ref(false)
               <NuxtLink href="/" class="nav-item is-active" active-color="red">
                 Home
               </NuxtLink>
-              <NuxtLink href="/about" class="nav-item" active-color="red">
-                About
-              </NuxtLink>
+             
               <NuxtLink href="/contact" class="nav-item" active-color="red">
                 Contact</NuxtLink>
             </div>

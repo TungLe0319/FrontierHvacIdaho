@@ -7,10 +7,10 @@ defineProps(['header', 'title', 'content'])
     <h3 class=" uppercase text-orange-400">
       {{ header }}
     </h3>
-    <h1 class=" text-2xl font-bold lg:text-5xl">
+    <h1 class=" text-2xl font-bold lg:text-7xl  ">
       {{ title }}
     </h1>
-    <div class="w-full px-10 font-medium  text-center lg:w-1/2 lg:px-0 lg:text-center">
+    <div class="w-3/4 px-10 font-medium  text-center lg:w-1/2 lg:px-0 lg:text-center">
       <p>{{ content }}</p>
     </div>
   </div>

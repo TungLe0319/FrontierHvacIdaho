@@ -1,9 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Button from '../components/Globals/Button.vue'
+</script>
 
 <template>
-  <main class="text-base-content pt-16">
+  <main class="  mt-28">
     <div
-      class="mx-auto flex max-w-screen-md flex-col items-center justify-center px-4 py-8 lg:py-16"
+      class="mx-auto  flex max-w-screen-md flex-col items-center justify-center px-4 py-8 lg:py-16"
     >
       <SectionHeaderCenter
         header="Contact Us"
@@ -12,7 +14,7 @@
       impedit veniam voluptate culpa iste at quibusdam, facilis fugit expedita?"
       />
       <div
-        class="card bg-neutral text-neutral-content rounded-md p-10 shadow-xl"
+        class="bg-[var(--midnight-blue)] text-neutral-content rounded-md p-10 shadow-xl"
       >
         <form action="#" class="space-y-8">
           <div class="flex justify-between space-x-8">
@@ -22,8 +24,8 @@
                 <input
                   id="email"
                   type="email"
-                  class="input text-base-content"
-                  placeholder="name@flowbite.com"
+                  class="form"
+                  placeholder="Email..."
                   required
                 >
               </div>
@@ -32,8 +34,8 @@
                 <input
                   id="subject"
                   type="text"
-                  class="input text-base-content"
-                  placeholder="Let us know how we can help you"
+                  class="form"
+                  placeholder="Subject..."
                   required
                 >
               </div>
@@ -52,13 +54,13 @@
               id="message"
               rows="6"
               cols="100"
-              class="textarea text-base-content"
+              class="form"
               placeholder="Leave a comment..."
             />
           </div>
-          <button type="submit" class="btn btn-warning">
+          <Button type="submit" class="  rounded  bg-[var(--auburn)]">
             Send message
-          </button>
+          </Button>
         </form>
       </div>
     </div>
@@ -66,11 +68,9 @@
 </template>
 
 <style scoped>
-input {
-  @apply rounded-md p-2 ring-2 ring-amber-400 focus:ring;
+.form {
+  @apply rounded-md p-2 ring-2 ring-amber-400 focus:ring bg-[var(--night)];
 }
 
-textarea {
-  @apply rounded-md p-2 ring-2 ring-amber-400 focus:ring;
-}
+
 </style>

@@ -5,14 +5,14 @@ import Hero from '../components/Hero.vue'
 <template>
   <div class="flex flex-col space-y-10 lg:space-y-20  lg:mt-0  ">
     <Hero />
- <About/>
     <ProblemSolution />
     <Features />
     <CallToActionTwo />
-    <StandingOut />
-    <PricingPlan/>
+    <Benefits />
+    <About />
+    <PricingPlan />
     <Testimonials />
-    <FAQ/>
+    <FAQ />
     <CallToActionThree />
   </div>
 </template>
