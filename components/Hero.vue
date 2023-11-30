@@ -5,9 +5,9 @@ import Button from './Globals/Button.vue'
 // import ButtonWithIcon from "../../../packages/Shared-Components/Buttons/ButtonWithIcon.vue";
 
 const iconListItems = [
-  { icon: 'mdi:check-bold', text: 'Boosted Engagement', iconColor: 'rgb(245 158 11)' },
-  { icon: 'mdi:check-bold', text: 'Enhanced User Experience', iconColor: 'rgb(245 158 11)' },
-  { icon: 'mdi:check-bold', text: 'Skyrocketed Conversions', iconColor: 'rgb(245 158 11)' },
+  { icon: 'mdi:check-bold', text: 'Reliable Performance:', iconColor: 'rgb(245 158 11)' },
+  { icon: 'mdi:check-bold', text: 'Smart Energy Solutions', iconColor: 'rgb(245 158 11)' },
+  { icon: 'mdi:check-bold', text: 'Optimized Climate Control', iconColor: 'rgb(245 158 11)' },
 ]
 </script>
 
@@ -16,15 +16,15 @@ const iconListItems = [
     <div class="lg:flex justify-center items-center gap-2 w-full px-5  lg:px-10 ">
       <div class=" text-start lg:w-2/3 flex flex-col items-start justify-center space-y-5 mb-10">
         <h1 class=" text-white font-serif text-5xl font-bold  lg:text-7xl     drop-shadow-md">
-          Elevate Your Digital Presence
+      Transforming Spaces with Smart Climate Solutions
         </h1>
 
        
         <h2 class="font-serif text-3xl font-bold  lg:text-4xl ">
-          Crafting Seamless Solutions for Unmatched Online Success
+      Delivering cutting-edge HVAC solutions tailored for your comfort and efficiency needs. Our expertise ensures a seamless blend of technology and performance to redefine your living or working environment.
         </h2>
         <Button class=" rounded-full shadow-md flex items-center justify-center gap-2">
-          <span>See the Transformation</span>
+          <span>Experience Superior Comfort Today</span>
           <Icon name="material-symbols:arrow-right-alt" size="30" />
         </Button>
         <IconList :items="iconListItems" icon-size="28px">
