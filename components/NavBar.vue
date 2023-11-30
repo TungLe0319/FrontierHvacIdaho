@@ -85,20 +85,20 @@ const isOpen = ref(false)
 
 <template>
   <div ref="nav"
-    class="fixed top-0 z-50 flex  w-full items-center lg:justify-around gap-4 lg:gap-0 bg-white p-2 text-gray-900 shadow-md transition-transform duration-300 ease-in-out"
+    class="fixed top-0 z-50 lg:flex  w-full items-center lg:justify-around gap-4 lg:gap-0 bg-white p-2 text-gray-900 shadow-md transition-transform duration-300 ease-in-out"
     :style="{ transform: navTransform }">
-    <div class="w-1/3 px-2 flex  ">
-      <div class=" text-4xl font-bold p-2 text-center w-full ">
+    <div class="lg:w-1/3 px-2 hidden lg:flex  ">
+      <div class=" lg:text-4xl font-bold p-2 text-center w-full ">
         FrontierHvacIdaho
       </div>
     </div>
-    <div class="w-2/3 px-2">
-      <div class="flex gap-4 justify-end w-full ">
-        <Button class="  hover:text-[var(--auburn)] bg-transparent   flex items-center justify-center gap-2">
+    <div class="lg:w-2/3 px-2">
+      <div class=" hidden lg:flex gap-4 justify-end w-full ">
+        <Button class="  hover:text-[var(--auburn)] bg-transparent   flex items-center justify-center gap-2 ">
           <Icon name="uis:schedule" size="30" />
-          <span class="text-sm">Schedule Now</span>
+          <span class="text-3xl">Schedule Now</span>
         </Button>
-        <Button class="  hover:text-[var(--auburn)]  bg-transparent flex items-center justify-center gap-2">
+        <Button class="  hover:text-[var(--auburn)]  bg-transparent flex items-center justify-center gap-2 ">
           <Icon name="carbon:star-review" size="30" />
           <span class="text-sm">Review us on google</span>
         </Button>
@@ -107,9 +107,10 @@ const isOpen = ref(false)
           <span>1-208-921-232</span>
         </Button>
       </div>
-      <div class="flex w-full justify-end">
+      <div class="flex w-full lg:justify-end">
+           <!-- OPEN & NAV BUTTONS -->
         <Button class="bg-transparent lg:hidden block" label="Open" @click="isOpen = true">
-          <Icon name="solar:hamburger-menu-linear" class="text-6xl" />
+          <Icon name="solar:hamburger-menu-linear" class="text-4xl" />
         </Button>
         <div class="relative hidden w-fit overflow-hidden lg:inline-flex">
           <NuxtLink href="/" class="nav-item is-active" active-color="red">
@@ -122,19 +123,51 @@ const isOpen = ref(false)
             Contact
           </NuxtLink>
           <span class="nav-indicator" />
+
+               <!-- OPEN & NAV BUTTONS -->
         </div>
         <USlideover v-model="isOpen" :ui="{
-          background: 'bg-white dark:bg-white',
+          background: 'dark:bg-white',
+
         }">
-          <div class="p-4  ">
-            <ul class="space-y-6   ">
-              <li v-for="navItem in navItems"
-                class="hover:brightness-50 text-6xl flex items-center justify-start font-bold ">
-                <NuxtLink :href="navItem.href" class="nav-item is-active" active-color="orange">
-                  {{ navItem.label }}
-                </NuxtLink>
-              </li>
-            </ul>
+          <div class="  flex flex-col items-center h-full  justify-between ">
+
+            <!-- CLOSE & NAV BUTTONS -->
+            <div class="flex flex-col w-full items-center justify-center text-black text-6xl">
+              <div class="flex w-full justify-start">
+                <Button color="gray" @click="isOpen = false">
+                  <Icon name="material-symbols:cancel-rounded" class="text-5xl text-black" />
+                </Button>
+              </div>
+              <NuxtLink href="/" class="nav-item is-active" active-color="red">
+                Home
+              </NuxtLink>
+              <NuxtLink href="/about" class="nav-item" active-color="red">
+                About
+              </NuxtLink>
+              <NuxtLink href="/contact" class="nav-item" active-color="red">
+                Contact</NuxtLink>
+            </div>
+              <!-- CLOSE & NAV BUTTONS -->
+              <!-- ======================================== -->
+              <!-- ACTION BUTTONS -->
+            <div class="flex flex-col items-center  space-y-8 justify-center w-full pb-24 text-3xl ">
+              <Button
+                class="  rounded-full border-2 border-[var(--auburn)] text-[var(--auburn)]    hover:text-[var(--auburn)] bg-transparent   flex items-center justify-center gap-2 ">
+                <Icon name="uis:schedule"  class="text-5xl" />
+                <span class="">Schedule Now</span>
+              </Button>
+              <Button
+                class=" rounded-full  border-2 border-[var(--auburn)] text-[var(--auburn)]  bg-transparent flex items-center justify-center gap-2 ">
+                <Icon name="carbon:star-review"  class="text-5xl" />
+                <span class="text-3xl">Review us on google</span>
+              </Button>
+              <Button class=" rounded-full  bg-[var(--auburn)]   shadow-md flex items-center justify-center gap-2">
+                <Icon name="material-symbols:call"  class="text-5xl" />
+                <span>1-208-921-232</span>
+              </Button>
+            </div>
+               <!-- ACTION BUTTONS -->
           </div>
         </USlideover>
       </div>
@@ -148,7 +181,7 @@ const isOpen = ref(false)
   transition: 0.3s;
   margin: 0 6px;
   z-index: 1;
-font-weight: bold;
+  font-weight: bold;
 
   position: relative;
 }

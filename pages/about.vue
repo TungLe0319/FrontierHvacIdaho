@@ -40,51 +40,35 @@ IT Consultation: Our IT specialists provide expert guidance to help you make the
 
 <template>
   <main class="pt-16">
-    <div
-      class="hero relative flex flex-col items-center justify-center"
-      style="
+    <div class="hero relative flex flex-col items-center justify-center" style="
         background-image: url(https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-      "
-    >
+      ">
       <div class="hero-overlay bg-opacity-20" />
       <div class="hero-inner-border" />
       <div class="hero-inner-border-2" />
       <div class="absolute">
         <div class="max-w-sm drop-shadow-md lg:max-w-xl">
-          <h1 class="mb-5 font-serif text-5xl font-bold text-white lg:text-8xl">
+          <h1 class="mb-5  text-5xl font-bold text-white lg:text-8xl">
             Hello there
           </h1>
           <p class="mb-5 text-xl text-white drop-shadow-md">
             We appreciate you taking the time to check out this project. i hope
             you like it and if so check it out on github and clone it!
           </p>
-          <a
-            href="https://github.com/daniel-le97/drizzle-nuxt"
-            class="link text-2xl"
-          >
+          <a href="https://github.com/daniel-le97/drizzle-nuxt" class="link text-2xl">
             Github
           </a>
         </div>
       </div>
     </div>
-    <section
-      v-for="(section, index) in sections"
-      :key="section.title"
-      v-motion-fade-visible
-      class="bg-base-100 my-12 flex flex-col space-y-4 p-8"
-    >
+    <section v-for="(section, index) in sections" :key="section.title" v-motion-fade-visible
+      class="bg-base-100 my-12 flex flex-col space-y-4 p-8">
       <div class="flex">
-        <div
-          :class="index % 2 === 0 ? ' order-1' : ' order-0'"
-          class="flex w-1/2 items-center justify-center"
-        >
+        <div :class="index % 2 === 0 ? ' order-1' : ' order-0'" class="flex w-1/2 items-center justify-center">
           <img :src="section.image" alt="about image">
         </div>
-        <article
-          :class="index % 2 === 1 ? ' order-1' : ' order-0'"
-          class="prose flex w-1/2 flex-col space-y-6 p-10"
-        >
-          <h1 class="mb-0 font-serif text-3xl font-bold">
+        <article :class="index % 2 === 1 ? ' order-1' : ' order-0'" class="prose flex w-1/2 flex-col space-y-6 p-10">
+          <h1 class="mb-0  text-3xl font-bold">
             {{ section.title }}
           </h1>
           <h2 class="font-sans text-xl font-semibold">
@@ -116,7 +100,7 @@ IT Consultation: Our IT specialists provide expert guidance to help you make the
 }
 
 .hero-inner-border-2 {
-  @apply absolute  border-2 bg-transparent;
+  @apply absolute border-2 bg-transparent;
   height: 85%;
   width: 92%;
 }

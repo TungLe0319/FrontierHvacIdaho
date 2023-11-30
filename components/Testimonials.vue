@@ -9,10 +9,8 @@
             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
               class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
           </div>
-          <h5 class="mb-2 text-lg font-bold">Maria Smantha</h5>
-          <h6 class="text-primary dark:text-primary-400 mb-4 font-medium">
-            Web Developer
-          </h6>
+          <h5 class="mb-2 text-lg font-bold text-[var(--aero)] ">Maria Smantha</h5>
+         
           <p class="mb-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
             id officiis hic tenetur quae quaerat ad velit ab hic.
@@ -21,7 +19,7 @@
                 d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
             </svg>
           </p>
-         <div class="flex gap-2  justify-center">
+         <div class="flex gap-2  justify-center text-amber-300">
           <Icon v-for="(i, index) in 4" :key="index" name="ic:round-star" color="text-warning" size="30" />
             <Icon  name="ic:round-star-half" color="text-warning" size="30" />
          </div>
@@ -31,10 +29,8 @@
             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
               class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
           </div>
-          <h5 class="mb-2 text-lg font-bold">Lisa Cudrow</h5>
-          <h6 class="text-primary dark:text-primary-400 mb-4 font-medium">
-            Graphic Designer
-          </h6>
+          <h5 class="mb-2 text-lg font-bold text-[var(--aero)] ">Lisa Cudrow</h5>
+        
           <p class="mb-4">
             Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
             suscipit laboriosam, nisi ut aliquid commodi.
@@ -43,7 +39,7 @@
                 d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
             </svg>
           </p>
-       <div class="flex gap-2  justify-center">
+       <div class="flex gap-2  justify-center text-amber-300">
         <Icon v-for="(i,index) in 5" :key="index" name="ic:round-star" color="text-warning" size="30" />
         
        </div>
@@ -53,10 +49,8 @@
             <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
               class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
           </div>
-          <h5 class="mb-2 text-lg font-bold">John Smith</h5>
-          <h6 class="text-primary dark:text-primary-400 mb-4 font-medium">
-            Marketing Specialist
-          </h6>
+          <h5 class="mb-2 text-lg font-bold text-[var(--aero)] ">John Smith</h5>
+         
           <p class="mb-4">
             At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum deleniti atque corrupti.
@@ -65,7 +59,7 @@
                 d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
             </svg>
           </p>
-         <div class="flex gap-2  justify-center">
+         <div class="flex gap-2  justify-center text-amber-300">
           <Icon v-for="(i, index) in 4" :key="index" name="ic:round-star" color="text-warning" size="30" />
             <Icon  name="ic:round-star-border" color="text-warning" size="30" />
          </div>
@@ -75,6 +69,9 @@
   </div>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+
+
+</script>
 
 <style></style>

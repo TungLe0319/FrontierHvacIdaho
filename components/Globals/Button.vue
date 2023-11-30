@@ -51,7 +51,7 @@ function purgeRipples() {
 
 <style scoped>
 button {
-  @apply  font-bold  px-4 py-2   hover:scale-[1.03] active:scale-100 transition-all duration-150 ease-in-out;
+  @apply  font-bold  px-4 py-2   hover:scale-[1.01] active:scale-100 transition-all duration-150 ease-in-out;
 }
 .outlined {
   background-color: transparent;

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,9 +7,15 @@ img {
   @apply rounded-md hover:brightness-90 transition-all duration-150 ease-linear shadow-md;
 }
 
+
+*{
+font-family: 'Roboto', sans-serif;
+
+
+}
 :root {
   --aero: #61b3d6ff;
-  --auburn: #9a2622ff;
+  --auburn: rgb(180, 46, 41);
   --night: #141518ff;
   --midnight-blue: #341e65;
   --penn-blue: #081b54ff;
