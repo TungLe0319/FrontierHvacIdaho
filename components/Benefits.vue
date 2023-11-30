@@ -3,20 +3,20 @@ const benefits = [
   {
       title: 'Year-Round Installation Expertise',
     content: 'Trust our skilled team for seamless installation of furnaces, air conditioners, ductless systems, and more.',
-    icon: 'icon-installation', // Replace with a general installation icon URL
+    icon: 'meteocons:clear-day-fill', // Replace with a general installation icon URL
     image: 'https://images.unsplash.com/photo-1640087975859-f2e7a8d09634?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
   {
      title: 'Efficient Cooling Solutions',
     content: 'Stay cool and relaxed with our advanced air conditioning systems designed for maximum efficiency and performance.',
-    icon: 'icon-ac', // Replace with appropriate air conditioner icon URL
+    icon: 'meteocons:snowflake-fill', // Replace with appropriate air conditioner icon URL
     image: 'https://images.unsplash.com/photo-1465224414649-ceb7f1db3999?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 
   {
     title: 'Enhance Comfort All Year',
     content: 'Upgrade your living spaces with top-notch HVAC solutions, ensuring optimal comfort throughout the seasons.',
-    icon: 'icon-furnace', // Replace with appropriate furnace icon URL
+    icon: 'meteocons:wind', // Replace with appropriate furnace icon URL
     image: 'https://images.unsplash.com/photo-1511256094521-c1cf19529095?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
   },
 
@@ -39,7 +39,8 @@ const benefits = [
           :style="{ backgroundImage: `url('${benefit.image}')` }">
         </div>
         <article :class="index % 2 === 1 ? ' order-1' : ' order-0'"
-          class=" flex lg:w-1/2 flex-col space-y-6 items-center justify-center  ">
+          class=" flex lg:w-1/2 flex-col space-y-6 items-center justify-center  lg:p-10 p-4 ">
+          <Icon :name="benefit.icon" class="text-9xl" />
           <h1 class="mb-0  text-5xl font-bold  ">
             {{ benefit.title }}
           </h1>
