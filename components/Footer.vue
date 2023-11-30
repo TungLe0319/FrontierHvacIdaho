@@ -51,6 +51,9 @@
        
         </div>
       </div>
+     <div class="flex space-x-4 text-xs text-gray-400 mb-2">
+       <a href="https://www.flaticon.com/free-icons/air-conditioning" title="air conditioning icons">Heating iconscreated by vectorsmarket15 - Flaticon</a><a href="https://www.flaticon.com/free-icons/air-conditioning" title="air conditioning icons">Air conditioning icon created by surang - Flaticon</a>
+     </div>
       <div class="flex flex-col-reverse text-gray-400 justify-between pt-5 pb-10 border-t lg:flex-row">
         <p class="text-sm ">
           © Copyright 2020 Lorem Inc. All rights reserved.

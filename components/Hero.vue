@@ -15,7 +15,7 @@ const iconListItems = [
   <div class="  mt-[69px] lg:mt-32  min-h-screen flex items-center justify-center relative overflow-hidden">
     <div class="lg:flex justify-center items-center gap-2 w-full px-5  lg:px-10 ">
       <div class=" text-start lg:w-2/3 flex flex-col items-start justify-center space-y-5 mb-10 ">
-        <h1 class="  mt-4 lg:mt-0   gradient-text text-5xl font-bold  lg:text-7xl     drop-shadow-md">
+        <h1 class="  mt-4 lg:mt-0    text-5xl font-bold  lg:text-7xl     drop-shadow-md">
       Transforming Spaces with Smart Climate Solutions
         </h1>
 
