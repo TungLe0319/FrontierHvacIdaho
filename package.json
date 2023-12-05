@@ -12,13 +12,17 @@
   "devDependencies": {
     "@invictus.codes/nuxt-vuetify": "^0.3.0",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.10.1",
     "nuxt": "^3.8.2",
+    "nuxt-icon": "^0.6.6",
+    "nuxt-use-motion": "^2.0.0-beta.11",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@nuxt/ui": "^2.11.0",
     "@vueuse/motion": "^2.0.0",
-    "@vueuse/nuxt": "^10.6.1"
+    "@vueuse/nuxt": "^10.6.1",
+    "sass": "^1.69.5",
+    "vue-preloader": "^1.1.4"
   }
 }

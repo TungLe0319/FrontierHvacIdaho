@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center p-4 lg:p-0 ">
     <div class=" lg:w-2/3 ">
       <SectionHeaderCenter title="HVAC Knowledge Hub" content="Common HVAC Queries" header="Frequently asked questions" />
-      <UAccordion multiple :items="items" :ui="{
+      <!-- <UAccordion multiple :items="items" :ui="{
         wrapper: 'flex flex-col w-full', item: {
           size: 'text-base',
           color: '',
@@ -21,7 +21,7 @@
               class="w-10 h-10 ms-auto transform transition-transform duration-200" :class="[open && 'rotate-90']" />
           </Button>
         </template>
-      </UAccordion>
+      </UAccordion> -->
     </div>
   </div>
 </template>

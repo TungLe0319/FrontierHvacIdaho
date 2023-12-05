@@ -24,9 +24,9 @@ import Button from './Globals/Button.vue';
                         alt="member photo" class="h-8 w-8 rounded-full object-cover">
                 </div>
                 <div class="mt-6 m-auto space-y-6 md:w-8/12 lg:w-7/12">
-                    <h1 class="text-center text-6xl  font-bold text-gray-800 dark:text-white ">Get Started now
+                    <h1 class="text-center text-6xl  font-bold   ">Get Started now
                     </h1>
-                    <p class="text-center text-xl text-gray-600 dark:text-gray-300">
+                    <p class="text-center text-xl  opacity-60 ">
                         Be part of millions people around the world using tailus in modern User Interfaces.
                     </p>
                     <div class="flex flex-wrap justify-center gap-6">

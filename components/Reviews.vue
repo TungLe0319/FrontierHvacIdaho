@@ -10,8 +10,8 @@
   <div class=" hero-image   flex items-center justify-center border-y-4 w-full border-orange-300  relative  text-center">
 
     
-    <section class=" z-40 w-full p-10   flex  items-center justify-between  gap-2">
-      <v-carousel>
+    <section class="  z-40 w-full p-10   flex  items-center justify-between  gap-2">
+      <v-carousel >
         <v-carousel-item>
           <Testimonials />
         </v-carousel-item>

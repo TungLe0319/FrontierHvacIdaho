@@ -8,6 +8,7 @@ img {
 }
 
 
+
 *{
 font-family: 'Roboto', sans-serif;
 
@@ -21,10 +22,7 @@ font-family: 'Roboto', sans-serif;
   --penn-blue: #081b54ff;
 }
 
-body{
-  background-color: var(--night); 
 
-}
 
 
 /* Example usage of the color variables */
@@ -32,10 +30,7 @@ body{
   background-color: var(--midnight-blue);
 }
 
-.button {
-  background-color: var(--auburn);
-  color: white;
-}
+
 
 /* Gradient using aero and auburn with text clipping */
 .gradient-aero-penn {

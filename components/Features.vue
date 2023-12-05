@@ -4,7 +4,7 @@
     content="Elevate Comfort with Our Expert Heating, Air Conditioning, and Indoor Air Quality Services."
     header="Optimized HVAC Solutions" />
   <div class="flex w-full flex-col items-center justify-center p-4 lg:p-10">
-    <div class="features">
+    <div class="features"> 
  
       <div class="feature shadow-2xl shadow-purple-500/10 group" v-for="feature in featureItems">
           <div class="feature-content    ">
@@ -195,7 +195,7 @@ function getTextColorClass(color) {
 .feature-content {
   background: #131315;
   border-radius: inherit;
-
+color: white;
   padding: 10px;
   z-index: 1;
 
