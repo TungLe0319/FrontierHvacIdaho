@@ -6,7 +6,7 @@
         wrapper: 'flex flex-col w-full', item: {
           size: 'text-base',
           color: '',
-padding:'p-4'
+          padding: 'p-4'
         }
       }">
         <template #default="{ item, index, open }">
@@ -28,6 +28,7 @@ padding:'p-4'
 
 <script lang="ts" setup>
 import Button from './Globals/Button.vue'
+
 const items = [{
   label: 'Heating System Maintenance',
   icon: 'bi:thermometer-sun',

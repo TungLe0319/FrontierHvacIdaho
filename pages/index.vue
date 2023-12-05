@@ -11,9 +11,11 @@ import Hero from '../components/Hero.vue'
     <Benefits />
     <About />
     <PricingPlan />
-    <Testimonials />
+    <Reviews/>
     <FAQ />
+
     <CallToActionThree />
+    <ContactForm/>
   </div>
 </template>
 

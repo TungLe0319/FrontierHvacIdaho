@@ -1,7 +1,6 @@
 <template>
   <div class="container mx-auto my-24 md:px-6">
-    <SectionHeaderCenter title="Testimonials" header="What our customers say"
-      content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic." />
+  
     <section class="mb-32 pt-5 text-center px-5 lg:px-0">
       <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
         <div class="mb-12 md:mb-0">
