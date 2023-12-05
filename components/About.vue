@@ -1,42 +1,57 @@
-<template>
- <div id="about" class="relative bg-white overflow-hidden ">
-      <div class="max-w-7xl mx-auto">
-          <div class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32">
-              <svg class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
-                  fill="currentColor" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
-                  <polygon points="50,0 100,0 50,100 0,100"></polygon>
-              </svg>
-
-              <div class="pt-1"></div>
-
-              <main class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
-                  <div class="sm:text-center lg:text-left">
-                      <h2 class="my-6 text-2xl tracking-tight font-extrabold  text-black sm:text-3xl md:text-4xl">
-                          About us
-                      </h2>
-
-                      <p class="text-black">
-                          Donec porttitor, enim ut dapibus lobortis, lectus sem tincidunt dui, eget ornare lectus ex non
-                          libero. Nam rhoncus diam ultrices porttitor laoreet. Ut mollis fermentum ex, vel viverra lorem
-                          volutpat sodales. In ornare porttitor odio sit amet laoreet. Sed laoreet, nulla a posuere
-                          ultrices, purus nulla tristique turpis, hendrerit rutrum augue quam ut est. Fusce malesuada
-                          posuere libero, vitae dapibus eros facilisis euismod. Sed sed lobortis justo, ut tincidunt
-                          velit. Mauris in maximus eros.
-                      </p>
-                  </div>
-              </main>
-          </div>
-      </div>
-      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-          <img class="h-56 w-full rounded-none object-cover object-top sm:h-72 md:h-96 lg:w-full lg:h-full" src="https://images.unsplash.com/photo-1480455624313-e29b44bbfde1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
-      </div>
-  </div>
-</template>
-
 <script lang="ts" setup>
 
 </script>
 
-<style>
+<template>
+    <div class="flex w-full flex-col items-center justify-center  p-10 lg:flex-row ">
+    
+        <div class="flex flex-col items-center justify-center lg:w-1/2 lg:pl-10">
+            <SectionHeader header="Serving Idaho Since 2006" title="Frontier Heating & Air Conditioning"
+                content="
+Founded recently, Frontier Heating & Air Conditioning embodies the American dream. Established by dedicated founders, [Founder Name(s)], the company is committed to delivering excellence in HVAC services. With a focus on hard work and customer satisfaction, Frontier Heating & Air Conditioning quickly establishes itself as a key player in the [Location] community. The company proudly upholds American values and is dedicated to building a diverse and dynamic team." />
+            <div class="mt-3 space-y-3">
+                <div class="flex">
+                    <div class="mx-3 h-fit">
+                        <Icon name="fluent:person-support-16-filled" color="" size="50" />
+                    </div>
+                    <div class="lg:w-3/4">
+                        <div>
+                            <h1 class=" text-xl font-bold lg:text-2xl">
+                                Responsive Assistance
+                            </h1>
+                            <p class="text-sm lg:text-base">
+                                With a proven track record of excellence, our HVAC solutions stand the test of time. Trust
+                                in our
+                                expertise to deliver reliable and high-quality services. We prioritize the longevity and
+                                efficiency of
+                                your HVAC system to ensure your ongoing comfort.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="mx-3 h-fit">
+                        <Icon name="ph:certificate-duotone" color="" size="50" />
+                    </div>
+                    <div class="lg:w-3/4">
+                        <div>
+                            <h1 class=" text-xl font-bold lg:text-2xl">
+                                Proven Quality
+                            </h1>
+                            <p class="text-sm lg:text-base">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Voluptas nemo corrupti esse, eveniet quos dignissimos,
+                                accusantium soluta, commodi quae nihil cum tempora omnis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="flex w-full items-center justify-center lg:w-1/2 mb-10 lg:mb-0">
+               <img src="https://images.unsplash.com/photo-1545280405-f06710f1779d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=" logo">
+            </div>
+    </div>
+</template>
 
-</style>
+<style></style>

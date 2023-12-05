@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Montserrat&family=Noto+Sans+Display&family=Oswald&family=Roboto&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,6 +14,10 @@ font-family: 'Roboto', sans-serif;
 
 
 }
+
+
+
+
 :root {
   --aero: #61b3d6ff;
   --auburn: rgb(180, 46, 41);

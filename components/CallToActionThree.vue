@@ -3,7 +3,7 @@ import Button from './Globals/Button.vue';
 </script>
 
 <template>
-    <div class="relative py-16">
+    <div class="relative  m-24">
         <div aria-hidden="true"
             class="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-40 dark:opacity-20">
             <div class="blur-[106px] h-72 bg-gradient-to-br from-teal-500 to-purple-400 dark:from-blue-700"></div>

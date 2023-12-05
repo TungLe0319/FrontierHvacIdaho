@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 import IconList from './Globals/IconList.vue'
 import Button from './Globals/Button.vue'
+import PhoneNumberBtn from './Globals/PhoneNumberBtn.vue';
 
 // import ButtonWithIcon from "../../../packages/Shared-Components/Buttons/ButtonWithIcon.vue";
 
@@ -23,10 +24,7 @@ const iconListItems = [
         <h2 class=" font-bold  text-2xl ">
       Delivering cutting-edge HVAC solutions tailored for your comfort and efficiency needs. Our expertise ensures a seamless blend of technology and performance to redefine your living or working environment.
         </h2>
-        <Button class=" rounded-full shadow-md flex items-center justify-center gap-2">
-          <span>Experience Superior Comfort Today</span>
-          <Icon name="material-symbols:arrow-right-alt" size="30" />
-        </Button>
+     <PhoneNumberBtn/>
      
         <IconList :items="iconListItems" icon-size="28px">
           <template #item-0>

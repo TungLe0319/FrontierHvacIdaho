@@ -5,8 +5,17 @@ import Reviews from '~/components/Reviews.vue';
 
 <template>
   <div class="flex flex-col space-y-10 lg:space-y-20  lg:mt-0  ">
-    <Hero />
+    <div id="hero">
+      <Hero />
+    </div>
+    <div id="about">
+        <About />
+      </div>
     <ProblemSolution />
+
+
+<ServiceBrands/>
+
     <div id="features">
       <Features />
     </div>
@@ -14,9 +23,7 @@ import Reviews from '~/components/Reviews.vue';
     <div id="benefits">
       <Benefits />
     </div>
-    <div id="about">
-      <About />
-    </div>
+    
     <div id="pricing">
       <PricingPlan />
     </div>

@@ -1,11 +1,12 @@
 <template>
 
-    <div class=" flex flex-col items-center justify-center">
-        <div class=" text-5xl text-center  font-bold my-10">
-       Contact
-        </div>
-        <hr class="  w-1/6  h-2 border-orange-400">
-    </div>
+ <div class="flex items-center justify-center">
+  <div class="w-2/3">
+      <SectionHeader header="Heating & Air Conditioning" title="Request a Service or Estimate"
+                    content="
+Fill out the form below or give us a call to request information about our products and services." />
+  </div>
+ </div>
     <section class="lg:flex  items-start justify-center mt-32 w-full  ">
 
 

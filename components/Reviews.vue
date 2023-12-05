@@ -7,19 +7,25 @@
   </div> -->
   <SectionHeaderCenter title="Testimonials" header="What our customers say"
     content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic." />
-  <div class=" hero-image   flex items-center justify-center border-y-4 w-full border-orange-300  relative  text-center">
-
-    
+  <div class=" hero-image   mt-32 mb-20 flex items-center justify-center border-y-4 w-full border-orange-300  relative  text-center">
     <section class="  z-40 w-full p-10   flex  items-center justify-between  gap-2">
-      <v-carousel >
-        <v-carousel-item>
-          <Testimonials />
-        </v-carousel-item>
-        <v-carousel-item>
-          <Testimonials />
-        </v-carousel-item>
-        <v-carousel-item>
-          <Testimonials />
+      <v-carousel hide-delimiter-background show-arrows="hover" progress="warning" cycle>
+        <v-carousel-item v-for="item in items" :key="item" >
+          <div class=" text-white  space-y-8 p-20 backdrop-blur-sm ">
+            <v-rating hover readonly :length="5" size="x-large" half-increments :model-value="item.rating"
+              color="grey darken-3" active-color="warning" />
+            <div class="  font-bold text-5xl ">
+              {{ item.title }}
+            </div>
+            <div class=" flex items-center justify-center space-x-5 ">
+              <Icon name="bx:bxs-quote-alt-left" class="text-4xl text-white" />
+              <span class="text-xl text-gray-300"> {{ item.content }}</span>
+              <Icon name="bx:bxs-quote-alt-right" class="text-4xl text-white" />
+            </div>
+            <div class="font-bold text-2xl">
+              - {{ item.name }}
+            </div>
+          </div>
         </v-carousel-item>
       </v-carousel>
     </section>
@@ -32,32 +38,66 @@
 </template>
 
 <script lang="ts" setup>
-import Testimonials from './Testimonials.vue';
 
-//generate items array with objects that have icon, number, title 3 of them
 
 const items = [
   {
-    icon: 'uil:building',
-    number: '100',
-    title: 'Projects Completed',
+    name: 'John Doe',
+    title: 'Customers for life!',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic.',
+    rating: 5
   },
   {
-    icon: 'basil:award-outline',
-    number: '25',
-    title: 'Awards',
+    name: 'Jane Doe',
+    title: 'Customers for life!',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic.',
+    rating: 4.5
   },
   {
-    icon: 'carbon:review',
-    number: '96%',
-    title: 'Positive Reviews',
+    name: 'Jake ',
+    title: 'Customers for life!',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic.',
+    rating: 4
   },
   {
-    icon: 'solar:people-nearby-bold',
-    number: '148K',
-    title: 'Happy Customers',
+    name: 'Tom',
+    title: 'Customers for life!',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic.',
+    rating: 4.5
   },
+  {
+    name: 'Daniel',
+    title: 'Customers for life!',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic.',
+    rating: 4
+  },
+  {
+    name: 'Jessica4',
+    title: 'Customers for life!',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic.',
+    rating: 5
+  },
+  {
+    name: 'William',
+    title: 'Customers for life!',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic.',
+    rating: 5
+  },
+  {
+    name: 'Jackie',
+    title: 'Customers for life!',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic.',
+    rating: 5
+  },
+  {
+    name: 'Jeremy',
+    title: 'Customers for life!',
+    content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic.',
+    rating: 5
+  }
 ]
+
+
 
 </script>
 

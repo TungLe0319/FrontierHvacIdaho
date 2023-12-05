@@ -2,32 +2,25 @@
   <div class="flex items-center justify-center p-4 lg:p-0 ">
     <div class=" lg:w-2/3 ">
       <SectionHeaderCenter title="HVAC Knowledge Hub" content="Common HVAC Queries" header="Frequently asked questions" />
-      <!-- <UAccordion multiple :items="items" :ui="{
-        wrapper: 'flex flex-col w-full', item: {
-          size: 'text-base',
-          color: '',
-          padding: 'p-4'
-        }
-      }">
-        <template #default="{ item, index, open }">
-          <Button
-            class="  hover:bg-blue-200/20 border-b flex items-center justify-between border-gray-200 dark:border-gray-700 gap-1"
-            :class="open && 'bg-[var(--aero)]  rounded'">
-            <div class="rounded-full  ">
-              <Icon :name="item.icon" class="text-4xl text-white " />
-            </div>
-            <span class="truncate">{{ index + 1 }}. {{ item.label }}</span>
-            <Icon name="i-heroicons-chevron-right-20-solid"
-              class="w-10 h-10 ms-auto transform transition-transform duration-200" :class="[open && 'rotate-90']" />
-          </Button>
-        </template>
-      </UAccordion> -->
+      <div class=" mt-24">
+        <v-expansion-panels color="blue-lighten-3" multiple>
+          <v-expansion-panel v-for="(item, index) in items" :key="index" :title="item.label"
+            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima">
+            <template v-slot:title>
+              <Icon :name="item.icon" class="text-4xl  " />
+              <div class=" ml-4 font-semibold">
+                {{ item.label }}
+              </div>
+            </template>
+          </v-expansion-panel>
+        </v-expansion-panels>
+      </div>
     </div>
   </div>
 </template>
 
 <script lang="ts" setup>
-import Button from './Globals/Button.vue'
+
 
 const items = [{
   label: 'Heating System Maintenance',
