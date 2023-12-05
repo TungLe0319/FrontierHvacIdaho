@@ -31,7 +31,7 @@ const benefits = [
 <template>
   <main class=" space-y-10 px-10 relative ">
   <SectionHeaderCenter header="Our Benefits" title="Why Choose Us?" content="We are a team of passionate and dedicated professionals who are committed to delivering exceptional results. We are here to help you achieve your goals and elevate your online presence." />
-    <section v-for="(benefit, index) in benefits" :key="benefit.title" v-motion-fade-visible
+    <section v-for="(benefit, index) in benefits" :key="benefit.title" 
       class=" flex flex-col space-y-4  ">
       <div class="lg:flex  space-y-4 lg:space-y-0 lg:mt-10 mt-5 ">
         <div :class="index % 2 === 0 ? ' order-1' : ' order-0'"

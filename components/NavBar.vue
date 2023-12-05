@@ -104,6 +104,7 @@ const isOpen = ref(false)
           <Icon name="carbon:star-review" size="30" />
           <span class="text-sm">Review us on google</span>
         </Button>
+         <v-btn append-icon="mdi:star" ></v-btn>
         <Button class=" rounded-full  bg-[var(--auburn)]  text-white shadow-md flex items-center justify-center gap-2">
           <Icon name="material-symbols:call" size="30" />
           <span>1-208-921-232</span>
@@ -164,6 +165,7 @@ const isOpen = ref(false)
                 class=" rounded-full  border-2 border-[var(--auburn)] text-[var(--auburn)]  bg-transparent flex items-center justify-center gap-2 ">
                 <Icon name="carbon:star-review"  class="text-5xl" />
                 <span class="text-3xl">Review us on google</span>
+                <v-btn append-icon="mdi:star" ></v-btn>
               </Button>
               <Button class=" rounded-full  bg-[var(--auburn)]   shadow-md flex items-center justify-center gap-2">
                 <Icon name="material-symbols:call"  class="text-5xl" />
