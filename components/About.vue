@@ -3,10 +3,10 @@
 </script>
 
 <template>
-    <div class="flex w-full flex-col items-center justify-center  p-10 lg:flex-row ">
+    <div class="flex w-full flex-col items-center justify-center  p-10 lg:flex-row  ">
     
-        <div class="flex flex-col items-center justify-center lg:w-1/2 lg:pl-10">
-            <SectionHeader header="Serving Idaho Since 2006" title="Frontier Heating & Air Conditioning"
+        <div class="flex flex-col items-center justify-center lg:w-1/2 lg:p-10">
+            <SectionHeader header="Serving Idaho Since 2006" title="Lorem Heating & Air Conditioning"
                 content="
 Founded recently, Frontier Heating & Air Conditioning embodies the American dream. Established by dedicated founders, [Founder Name(s)], the company is committed to delivering excellence in HVAC services. With a focus on hard work and customer satisfaction, Frontier Heating & Air Conditioning quickly establishes itself as a key player in the [Location] community. The company proudly upholds American values and is dedicated to building a diverse and dynamic team." />
             <div class="mt-3 space-y-3">

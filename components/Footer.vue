@@ -13,7 +13,7 @@
               <rect x="14" y="1" width="7" height="6"></rect>
               <rect x="14" y="11" width="7" height="12"></rect>
             </svg>
-            <span class="ml-2 text-3xl font-bold tracking-wide  uppercase">FrontierHvacIdaho</span>
+            <span class="ml-2 text-3xl font-bold tracking-wide  uppercase">Lorem Hvac</span>
           </a>
           <div class="mt-6 lg:max-w-sm">
             <p class="text-base  ">
@@ -26,11 +26,11 @@
           <span class="text-2xl font-bold tracking-wide ">Contacts</span>
          
         
-            <a href="tel:208-949-7450" aria-label="Our phone" title="Our phone" class="transition-colors duration-300  hover:text-[var(--aero)] ">(208)949-7450</a>
+            <a href="tel:208-949-7450" aria-label="Our phone" title="Our phone" class="transition-colors duration-300  hover:text-[var(--aero)] ">(208) 999-9999</a>
        
         
            
-            <a href="mailto:FrontierHvacIdaho@gmail.com" aria-label="Our email" title="Our email" class="transition-colors duration-300 hover:text-[var(--aero)]">FrontierHvacIdaho@gmail.com</a>
+            <a href="mailto:FrontierHvacIdaho@gmail.com" aria-label="Our email" title="Our email" class="transition-colors duration-300 hover:text-[var(--aero)]">LoremHvac@fakemail.com</a>
        
        
         </div>

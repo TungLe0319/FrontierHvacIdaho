@@ -13,7 +13,7 @@ import Reviews from '~/components/Reviews.vue';
       </div>
     <ProblemSolution />
 
-
+<BusinessHours/>
 <ServiceBrands/>
 
     <div id="features">
@@ -24,9 +24,7 @@ import Reviews from '~/components/Reviews.vue';
       <Benefits />
     </div>
     
-    <div id="pricing">
-      <PricingPlan />
-    </div>
+ 
     <div id="reviews">
       <Reviews />
     </div>

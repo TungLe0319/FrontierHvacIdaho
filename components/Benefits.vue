@@ -33,18 +33,19 @@ const benefits = [
   <SectionHeaderCenter header="Our Benefits" title="Why Choose Us?" content="We are a team of passionate and dedicated professionals who are committed to delivering exceptional results. We are here to help you achieve your goals and elevate your online presence." />
     <section v-for="(benefit, index) in benefits" :key="benefit.title" 
       class=" flex flex-col space-y-4  ">
-      <div class="lg:flex  space-y-4 lg:space-y-0 lg:mt-10 mt-5 ">
+      <div class="lg:flex items-center justify-center  space-y-4 lg:space-y-0 lg:mt-10 mt-5 ">
         <div :class="index % 2 === 0 ? ' order-1' : ' order-0'"
-          class="flex   cool-img  lg:w-1/2 h-[300px]  lg:h-[700px]   rounded-se-3xl rounded-es-3xl shadow-xl"
-          :style="{ backgroundImage: `url('${benefit.image}')` }">
+          class="flex   rounded-full   p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-orange-500  items-center justify-center "
+         >
+         <img :src="benefit.image" alt="" class="object-cover rounded-full w-96 h-96">
         </div>
         <article :class="index % 2 === 1 ? ' order-1' : ' order-0'"
           class=" flex lg:w-1/2 flex-col space-y-6 items-center justify-center  lg:p-10 p-4 ">
           <Icon :name="benefit.icon" class="text-9xl" />
-          <h1 class="mb-0  text-2xl lg:text-5xl font-bold  ">
+          <h1 class="mb-0  text-2xl lg:text-4xl font-bold  ">
             {{ benefit.title }}
           </h1>
-          <p class="p-4  text-xl lg:text-2xl ">
+          <p class="p-4  text-xl lg:text-xl ">
             {{ benefit.content }}
           </p>
         </article>
@@ -63,5 +64,18 @@ const benefits = [
  
     background-attachment: scroll;
   }
+}
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation: rotate 20s linear infinite;
 }
 </style>

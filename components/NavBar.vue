@@ -114,12 +114,14 @@ const items = [
 </script>
 
 <template>
-  <div ref="nav" :class="theme.global.current.value.dark ? 'bg-zinc-900' : 'bg-white/60'"
-    class="fixed top-0 z-50 lg:flex  w-full items-center lg:justify-around gap-4 lg:gap-0 p-2  shadow-md transition-transform duration-300 ease-in-out"
+  <div ref="nav" :class="theme.global.current.value.dark ? 'bg-zinc-900' : 'bg-white'"
+    class="fixed top-0 z-50 lg:flex  w-full items-center lg:justify-around gap-4 lg:gap-0 p-2  shadow-xl transition-transform duration-300 ease-in-out"
     :style="{ transform: navTransform }">
-    <div class="lg:w-1/3 px-2 hidden  lg:flex  ">
-      <div class=" lg:text-4xl font-bold p-2 text-center w-full ">
-        FrontierHvacIdaho
+    <div class="lg:w-1/3 w-1/4 px-2 hidden  lg:flex space-x-4  ">
+  <Icon name="iconoir:air-conditioner" class="text-4xl" />
+      <div class="flex flex-col items-start justify-center">
+        <div class="text-4xl font-bold">Lorem HVAC</div>
+       
       </div>
     </div>
     <div class="lg:w-2/3 px-2">
@@ -148,7 +150,7 @@ const items = [
           <ul class="gap-4 mt-4 relative hidden lg:flex">
             <li v-motion-slide-right :delay="2000" v-for="(item, index) in items" :key="index">
               <button @click="scrollToSection(item.id)"
-                class=" nav-item font-semibold mx-2 transition-all duration-300 ease-in-out relative"
+                class=" text-2xl nav-item  mx-2 transition-all duration-300 ease-in-out relative"
                 :class="{ 'is-active text-orange-300 drop-shadow-sm  before:w-full before:bg-orange-400 before:h-1 before:absolute before:-translate-x-1/2 before:rounded-t-full before:-bottom-2  before:left-1/2 before:transition-all before:duration-300': isActive(item.id) }">
                 {{ item.title }}
               </button>
